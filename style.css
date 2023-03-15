@@ -5,22 +5,25 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
 .contenedor {
     position: relative;
     width: 100%;
     margin: 50px;
     max-width: 1000px;
-    min-height: 2000px;
+    min-height: 1200px;
     background: #fff;
     display: grid;
     grid-template-columns: 1.1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
+
 .contenedor .derecha_web {
     position: relative;
     background: rgb(40, 40, 138);
     padding: 40px;
 }
+
 .textoperfil {
     position: relative;
     display: flex;
@@ -29,6 +32,7 @@ body {
     padding-bottom: 1px;
     border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
+
 .textoperfil .img {
     position: relative;
     width: 200px;
@@ -36,6 +40,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .textoperfil .img img {
     position: relative;
     top: 0;
@@ -44,7 +49,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.textoperfil h2{
+
+.textoperfil h2 {
     color: #ceb9b9;
     font-size: 1.5em;
     margin-top: 20px;
@@ -53,40 +59,48 @@ body {
     font-weight: 600;
     line-height: 1.4em;
 }
-.textoperfil h2 span{
+
+.textoperfil h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
+
 .contactoinfo {
     padding-top: 10px;
 }
-.titulo{
+
+.titulo {
     color: #0f0404;
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-.contactoinfo ul{
+
+.contactoinfo ul {
     position: relative;
 }
-.contactoinfo ul li{
+
+.contactoinfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
+    
 }
-.contactoinfo ul li .icono{
+
+.contactoinfo ul li .icono {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #9b9d09;
 }
+
 .contactoinfo ul li span {
     color: #fff;
     font-weight: 300;
 }
-.contactoinfo.habilidades .porcentaje{
+
+.contactoinfo.habilidades .porcentaje {
     position: relative;
     width: 100%;
     height: 6px;
@@ -94,13 +108,15 @@ body {
     display: block;
     margin-top: 5px;
 }
-.contactoinfo.habilidades .porcentaje div{
+
+.contactoinfo.habilidades .porcentaje div {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
+
 .contactoinfo.lenguajes .porcentaje {
     position: relative;
     width: 100%;
@@ -118,8 +134,95 @@ body {
     background: #03a9f4;
 }
 
+
+
 .contenedor .izquierda_web {
     position: relative;
     background: rgb(255, 255, 255);
     padding: 40px;
+}
+
+.acerca {
+    margin-bottom: 50px;
+}
+
+.acerca:last-child {
+    margin-bottom: 0;
+}
+
+.titulo2 {
+    color: #003147;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.acerca .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.acerca .box .año_compañia {
+    min-width: 150px;
+}
+
+.acerca .box .año_compañia h5 {
+    text-transform: capitalize;
+    color: #1d292f;
+    font-weight: 600;
+}
+
+.acerca .box .text h4 {
+    text-transform: capitalize;
+    color: #6a4010;
+    font-size: 16px;
+}
+
+.intereses ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intereses ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fi {
+    color: #03a9f4;
+    font-size: 20px;
+    width: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .acerca .box {
+        flex-direction: column;
+    }
+
+    .acerca .box .año_compañia {
+        margin-bottom: 5px;
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
