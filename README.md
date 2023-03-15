@@ -1,1 +1,1 @@
-se esta creando hoja de vida
+se termino hoja de vida
